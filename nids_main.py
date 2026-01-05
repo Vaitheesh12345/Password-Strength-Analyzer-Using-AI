@@ -7,7 +7,7 @@ st.set_page_config(
     page_icon="🛡️"
 )
 
-# ---------- CUSTOM CSS ----------
+
 st.markdown("""
 <style>
 body {
@@ -50,7 +50,7 @@ h3 {
 </style>
 """, unsafe_allow_html=True)
 
-# ---------- TITLE ----------
+
 st.markdown("<h1>🛡️ AI-based Network Intrusion Detection System</h1>", unsafe_allow_html=True)
 
 st.markdown(
@@ -58,7 +58,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------- UPLOAD SECTION ----------
+
 st.markdown('<div class="upload-box">', unsafe_allow_html=True)
 
 uploaded_file = st.file_uploader(
@@ -68,7 +68,7 @@ uploaded_file = st.file_uploader(
 
 st.markdown('</div>', unsafe_allow_html=True)
 
-# ---------- LOGIC ----------
+
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
 
